@@ -1,0 +1,16 @@
+Twitter Bootstrap App for Beginners
+
+Based on: Railscast #328 Twitter Bootstrap Basics
+
+This goes through the process of building a rails app from scratch and adding the Twitter Bootstrap gem. Twitter Bootstrap is an quick and easy way to add CSS to your app.
+
+Add to your gemfile:
+gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass'
+
+Then make a file in app/assets/stylesheets called load_bootstrap.css.scss. Enter:
+@import "bootstrap";
+
+Go to app/assets/stylesheets/application.css:
+Add *= require load_bootstrap
+
+Please go to: https://github.com/codefellows/store-rails4-boot3-sass in order to review the changes that were made from the original video, in order to make the app functional in Rails 4.
